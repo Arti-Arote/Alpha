@@ -1,0 +1,467 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Source Sans 3", sans-serif;
+    background-image: url(./images/banner.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-color: #f5f5f5;
+}
+nav{
+   
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.2rem 1rem;
+}
+
+#left > h1{
+    color: white;
+    font-size: 1rem;
+    margin: 0;
+}
+#left > h1 >span{
+    font-weight: 100;
+}
+#right>#cont{
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+#cont > li > a{
+    color: white;
+    text-decoration: none;
+    padding: 0.4rem 1rem;
+    display: block;
+
+}
+#cont > li > a > button{
+    font-size: 1rem;
+    padding: 0.2rem 1rem;
+    border-radius: 5px;
+    border: 2px solid rgb(222, 216, 216);
+    color: white;
+    background-color: transparent;
+}
+#box{
+    display: none;
+}
+
+/*--------------------------------dropdown-------------------- */
+
+#menu{
+    list-style-type: none;
+    padding: 0;
+    background-color: white;
+    position: absolute;
+    top: 100%;
+    right: 0%;
+    width: 180%;
+    display: none;
+}
+#menu > li > a{
+    text-decoration: none;
+    color: grey;
+    display: block;
+    border-bottom: 2px solid rgb(229, 220, 220);
+    padding: 0.5rem;
+}
+#drop{
+    position: relative;
+}
+#menu > li a:hover{
+    background-color: orangered;
+    color: white;
+}
+#drop:hover >#menu{
+    display: block;
+}
+
+#submenu{
+    list-style-type: none;
+    padding: 0;
+    display: none;
+    background-color: white;
+   
+}
+#submenu > li > a{
+    text-decoration: none;
+    color: grey;
+    display: block;
+    border-bottom: 2px solid rgb(229, 220, 220);
+    padding: 0.5rem;
+   
+}
+#drop2{
+    position: relative;
+   
+}
+
+#submenu>li >a:hover{
+    background-color: orangered;
+    color: white;
+    
+}
+#drop2:hover >#submenu{
+    display: block;
+   
+}
+/* -------------------------alpha------------------------------------ */
+#alpha{
+   text-align: center;
+   margin-top: 8rem;
+}
+#alpha > h2{
+    color: white;
+    font-size: 3rem;
+    font-weight: 300;
+    margin-bottom: 0;
+}
+#alpha > p{
+    color: white;
+    margin-bottom: 0;
+    font-size: 1.2rem;
+    font-weight: 300;
+    margin-bottom: 2rem;
+}
+#alpha > button{
+    width: 12%;
+    height: 3rem;
+    border-radius: 5px;
+    border: none;
+    color: grey;
+    margin-right: 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+#alpha > #learn{
+    background-color: transparent;
+    border: 2px solid rgb(203,199,199);
+    color: white;
+    cursor: pointer;
+}
+#alpha > #learn:hover{
+    background-color: transparent;
+    background-color: rgb(176, 164, 164);
+    
+}
+/* -------------------------mobile------------------- */
+#mobile{
+    text-align: center;
+    background-color: white;
+    width: 70%;
+    margin: auto;
+    border-radius: 7px;
+    padding-top: 1rem;
+    margin-top: 11rem;
+}
+#mobile>h2{
+    color: rgb(122, 117, 117);
+    font-weight: 300;
+    font-size: 2rem;
+}
+#mobile>p{
+    color: grey;
+    font-weight: 300;
+    font-size: 1.2rem;
+    border-top: 2px solid rgb(214, 209, 209);
+    width: 60%;
+    margin: auto;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+#mobile > img{
+    width: 100%;
+}
+/* --------------------------icon------------------- */
+#icon{
+    background-color: white;
+    width: 70%;
+    margin: auto;
+    margin-top: 2rem;
+    border-radius: 5px;
+    padding: 2rem;
+    box-sizing: border-box;
+}
+#icon>div{
+    width: 48%;
+    display: inline-block;
+    text-align: center;
+}
+.fa-bolt-lightning{
+    background-color: #e89980;
+    color: white;
+    border-radius: 100%;
+    padding: 2rem 2rem;
+    font-size: 2rem;
+
+}
+.fa-chart-area{
+    background-color: #7fcdb8;
+    color: white;
+    border-radius: 100%;
+    padding: 2rem 2rem;
+    font-size: 2rem;
+}
+.fa-cloud{
+    background-color: #90b0ba;
+    color: white;
+    border-radius: 100%;
+    padding: 2rem 2rem;
+    font-size: 2rem;
+}
+.fa-lock{
+    background-color: #e5cb95;
+    color: white;
+    border-radius: 100%;
+    padding: 2rem 2rem;
+    font-size: 2rem;
+}
+#icon>div>h2{
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+#icon>div>p{
+    font-weight: 300;
+    color: grey;
+}
+#div1{
+    border-right: 2px solid #e5e5e5;
+    border-bottom: 2px solid #e5e5e5;
+    position: relative;
+    top: 2px;
+    left: 3.5px;
+}
+#div4{  
+    border-left: 2px solid #e5e5e5;
+    border-top: 2px solid #e5e5e5;
+}
+#icon>div{
+    padding-top: 2rem;
+}
+/* ----------------cards--------------------- */
+#cards{
+    width: 70%;
+    margin:2rem auto auto auto;
+    display: flex;
+    justify-content: space-between;
+}
+#cards>div{
+background-color: white;
+width: 48%;
+text-align: center;
+padding-bottom: 2rem;
+border-radius: 5px;
+}
+#cards > div > img{
+    width: 100%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+#cards>h2{
+    color: grey;
+}
+/* ---------------------------------------sign up--------------------- */
+#signup{
+    background-color:#e89980;
+    color:#f9e6df;
+    text-align: center;
+    height: 330px;
+}
+#sign > h2{
+    font-size: 40px;
+    font-weight: 300;
+    padding-top: 3rem;
+    line-height: 1.5em;
+    letter-spacing: -0.035em;
+}
+
+#sign > p{
+    font-weight: 300;
+    font-size: 18px;
+    padding-bottom: 20px;
+}
+input[type="text"]{
+    font-size: 16px;
+    padding: 13px;
+    font-weight: 300;
+    line-height: 1.65em;
+    letter-spacing: -0.015em;
+    width: 20%;
+    border-radius: 5px;
+    margin-right: 17px;
+    border: none;
+    background-color: rgb(235, 168, 147);
+}
+/* #signup>#sign>input[type="placeholder"]{
+    color: white;
+} */
+#signup2{
+    padding: 1rem;
+    width: 10%;
+    border-radius: 5px;
+    border: none;
+    color: #e89980;
+    font-size: 16px;
+}
+/* -------------------------footer---------------------- */
+#footer{
+    display: flex;
+    justify-content: center;
+    background-color: #f0f0f0;
+    height: 200px;
+  
+}
+#ft{
+    display: flex;
+    list-style-type: none;
+    padding: 37px;
+    gap: 28px;
+   
+    
+}
+#ft > li{
+    font-size: 30px;
+}
+#ft > li >a{
+    color: #cbc2c2;
+}
+
+#copy{
+    position: absolute;
+    margin-top: 7rem;
+    display: flex;
+    height: 52px;
+    display: flex;
+    justify-content: center;
+    color: #a78989;
+    font-weight: 3;
+    font-size: 16px;
+}
+.learnmore{
+    padding: 1rem;
+    width: 34%;
+    border-radius: 5px;
+    border: 2px solid rgb(250, 232, 232);
+    font-size: 16px;
+    background-color: transparent;
+    cursor: pointer;
+}
+#copy> .html> a{
+    text-decoration:underline;
+    color: grey;
+}
+#copy>p{
+    padding-inline: 12px;
+    border-right: 1px solid rgb(194, 181, 181);
+    padding-inline: 12px;
+}
+#copy .html a:hover{
+    text-decoration:none;
+    
+    
+}
+
+/* ---------------mobile version----------------------------- */
+@media(max-width:600px){
+    body{
+        background-size: 190%;
+        background-position-x: center;
+        
+       
+    }
+    #box{
+        display: inline-block;
+        color: white;
+        background-color: grey;
+        padding: 0.5rem 1rem;
+        border-radius: 5px;
+        margin-top: 0.5rem;
+        margin-left: 0.5rem;
+    }
+    nav{
+        display: none;
+    }
+    #alpha{
+        text-align: center;
+        margin-top: 0rem;
+        width: 80%;
+        margin: auto;
+     }
+     #alpha > h2{
+        
+        font-size: 2rem;
+      
+    }
+    #alpha > p{
+        font-size: 1.1rem;
+    }
+    #alpha > button{
+        width: 100%;
+        margin-bottom: 1.1rem;
+    }
+    
+    #alpha > #learn{
+        background-color: transparent;
+        border: 2px solid rgb(203,199,199);
+        color: white;
+        cursor: pointer;
+    }
+    #mobile{
+        /* text-align: center;
+        background-color: white; */
+        width: 100%;
+        margin: auto;
+        padding-top: 1rem;
+        margin-top: 2rem;
+    }
+    #mobile>h2{
+     
+        font-size: 1.5rem;
+    }
+    #mobile>p{
+        width: 100%;
+        margin: auto;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+    br{
+        display: none;
+    }
+    #icon{
+        width: 100%;
+        margin-top: 1rem;
+       
+    }
+    #icon>div{
+        width: 100%;
+       border-bottom: 2px solid #e5e5e5;
+    }
+    #div1{
+        border-right: none;
+        border-bottom: none;
+        position: relative;
+        top: 0px;
+        left: 0px;
+    }
+    #div4{  
+        border-left: none;
+        border-top:none;
+    }
+    #cards{
+        width: 100%;
+        margin:1rem auto auto auto;
+        display: block;
+    }
+    #cards>div{ 
+        width: 100%;
+        margin-top: 1rem;
+        }
+        #cards > div > img{
+            width: 100%;
+        }
+}
